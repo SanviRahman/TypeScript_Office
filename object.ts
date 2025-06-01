@@ -1,7 +1,5 @@
-let users: Object[];
-users =[];
-
-
+let users:object[];
+users=[];
 let user1: {
     userName:string,
     userID: number
@@ -10,7 +8,6 @@ user1={
     userName:"Shanto",
     userID: 101
 }
-
 
 let user2: {
     userName:string,
