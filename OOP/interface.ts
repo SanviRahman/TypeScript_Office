@@ -1,10 +1,17 @@
 interface IProfile{
+    // function signature
     display: ()=>string;
 }
 
 class Teacher implements IProfile
 {
-    constructor(private fullName:string,private age:number){}
+    //private fullName:string;
+    //private age:number;
+    constructor(private fullName:string,private age:number){
+        //this keyword na dileo hobe
+        this.fullName=fullName;
+        this.age=age;
+    }
 
     display=()=>{
         return `Your Name: ${this.fullName}, Age: ${this.age}`;
