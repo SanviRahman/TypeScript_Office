@@ -16,6 +16,7 @@ class UserProfile{
 
 class Students extends UserProfile{
     studentID:number;
+    
     constructor(userName:string,age:number,studentID:number)
     {
         super(userName,age);
