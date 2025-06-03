@@ -1,4 +1,4 @@
-function printTodo(todoss:string[]| null)
+function printTodos(todoss:string[]| null)
 {
     if (todoss){
         todoss.map((todo)=>console.log(todo));
@@ -9,4 +9,4 @@ function printTodo(todoss:string[]| null)
 }
 // const todoss=["todos1","todos2"];
 const todoss=null;
-printTodo(todoss);
+printTodos(todoss);
