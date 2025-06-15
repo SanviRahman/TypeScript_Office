@@ -22,6 +22,4 @@ function specificAnimal(animal: Dog | Cat){
 
 let myDog=new Dog();
 let myCat=new Cat();
-
-
 specificAnimal(myCat);

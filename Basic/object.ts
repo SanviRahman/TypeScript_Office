@@ -22,3 +22,4 @@ users.push(user1);
 users.push(user2);
 
 console.log(users);
+
