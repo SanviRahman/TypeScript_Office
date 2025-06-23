@@ -1,8 +1,8 @@
-var ans = 0;
+var ans = 1;
 function convertFunction(str) {
     for (var i = 0; i < str.length; i++) {
-        var charCode = str.charCodeAt(i);
-        var digit = charCode - 48;
+        var char = str.charCodeAt(i);
+        var digit = char - 48;
         ans = ans * 10 + digit;
     }
     return ans;
