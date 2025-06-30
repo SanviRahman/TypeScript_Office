@@ -1,7 +1,14 @@
-function convertSwap(str:string,i:number,j:number):string{
+function convertSp(str:string,i:number,j:number):string{
     let char=str.split('');
-    [char[i],char[j]]=[char[j],char[i]];
+    
+    let temp;
+    temp=char[i];
+    char[i]=char[j];
+    char[j]=temp;
+
     return char.join('');
+
+
 }
 function permutationMaker(str:string,left:number,right:number):void
 {
@@ -10,7 +17,7 @@ function permutationMaker(str:string,left:number,right:number):void
         return;
     }
     for(let i=left; i<=right;i++){
-        str=convertSwap(str,left,i);
+        str=convertSp(str,left,i);
         permutationMaker(str,left+1,right);
     }
 }

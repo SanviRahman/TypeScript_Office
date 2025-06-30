@@ -1,7 +1,9 @@
-function convertSwap(str, i, j) {
-    var _a;
+function convertSp(str, i, j) {
     var char = str.split('');
-    _a = [char[j], char[i]], char[i] = _a[0], char[j] = _a[1];
+    var temp;
+    temp = char[i];
+    char[i] = char[j];
+    char[j] = temp;
     return char.join('');
 }
 function permutationMaker(str, left, right) {
@@ -10,7 +12,7 @@ function permutationMaker(str, left, right) {
         return;
     }
     for (var i = left; i <= right; i++) {
-        str = convertSwap(str, left, i);
+        str = convertSp(str, left, i);
         permutationMaker(str, left + 1, right);
     }
 }
