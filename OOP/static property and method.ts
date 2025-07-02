@@ -11,7 +11,7 @@ class Counter
     {
         return Counter.count;
     }
-}
+} 
 
 //kuno object bananu hoi ni
 Counter.increment();
