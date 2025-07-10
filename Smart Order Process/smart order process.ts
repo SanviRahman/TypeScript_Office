@@ -38,7 +38,7 @@ const readLine = readline.createInterface({
 
 
 
-//call function for input=>promise
+//call function for input=>retrun promise
 const ask = (question: string): Promise<any> => {
     return new Promise(resolve => readLine.question(question, resolve));
 }
